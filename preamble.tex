@@ -2,7 +2,7 @@
 % Unterstuetzung fuer die deutsche Sprache
 % ##################################################
 %\usepackage{ngerman}
-\usepackage[ngerman]{babel}
+\usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 
@@ -20,8 +20,8 @@
 \newcommand{\docMatrikelnummer}{000000}
 
 % Dokumentdaten
-\newcommand{\docTitle}{TITEL}
-%\newcommand{\docUntertitle}{} % Kein Untertitel
+\newcommand{\docTitle}{The digital twin as a central control element in supply-oriented value networks}
+\newcommand{\docUntertitle}{using the Asset Administration Shell} % Kein Untertitel
 \newcommand{\docUntertitle}{UNTERTITEL}
 \newcommand{\docArtDerArbeit}{Masterthesis}
 % Software-Produktmanagement Bachelor, Advanced Computer Scinece Master
@@ -29,7 +29,7 @@
 \newcommand{\docAbgabedatum}{xx.xx.2022}
 \newcommand{\docErsterReferent}{Prof. Dr. Harald Kopp}
 %\newcommand{\docZweiterReferent}{-} % Wenn es nur einen Betreuer gibt
-\newcommand{\docZweiterReferent}{Prof. Dr. xx}
+\newcommand{\docZweiterReferent}{}
 
 % ##################################################
 % Allgemeine Pakete
@@ -222,54 +222,6 @@
 \usepackage{tabu}
 
 % ##################################################
-% Listings (Quellcode)
-% ##################################################
-
-\usepackage{listings}
-
-%use typewriter font which supports bold characters
-\usepackage{beramono}
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.5,0,0.33}
-\definecolor{codepurblue}{rgb}{0.16,0.0,1.0}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
-\lstdefinestyle{codestyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\bfseries\color{codepurple},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurblue},
-    basicstyle=\scriptsize\ttfamily,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                     
-    numbersep=5pt,                 
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
-
-\lstset{style=codestyle}
-
-%Code auschnitt importieren aus datei
-%\mylisting{from}{to}{language}{file}{descr}{path}
-\newcommand{\mylisting}[6]{
-\lstinputlisting[language=#3,
-				firstnumber=#1,
-				firstline=#1,
-				lastline=#2,
-				caption={#4, #5}, 
-				label={implementation_listing_#4_#5}]
-				{#6}
-}
-
-% ##################################################
 % Appendix
 % ##################################################
 
@@ -354,4 +306,4 @@
 % Command für einfache QUellenangabe bei Bilder, etc.
 % ####################################################
 
-\newcommand{\source}[1]{\caption*{Quelle: {#1}} }
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
