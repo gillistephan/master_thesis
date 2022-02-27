@@ -16,7 +16,7 @@
 \newcommand{\docOrt}{München}
 \newcommand{\docPlz}{80395}
 \newcommand{\docEmail}{stephan.gilli@hs-furtwangen.de}
-\newcommand{\docMatrikelnummer}{000000}
+\newcommand{\docMatrikelnummer}{266674}
 
 % Dokumentdaten
 \newcommand{\docTitle}{The digital twin as a central control element in value networks}
@@ -37,11 +37,6 @@
 
 % Zusaetsliche Sonderzeichen
 \usepackage{dingbat}
-
-% Symbole Haken und X [OPTIONAL]
-%\usepackage{pifont}
-%\newcommand{\cmark}{\ding{51}}
-%\newcommand{\xmark}{\ding{55}}
 
 % Farben
 \usepackage{color}
@@ -67,8 +62,6 @@
 	outer=2.5cm,
 	top=3cm,
 	bottom=2cm,
-	%showframe, %Aktivieren um Seitengrenzen anzuzeigen
-	%includeheadfoot
 	]{geometry}
 
 % ##################################################
@@ -166,7 +159,7 @@
 \counterwithout{figure}{chapter}
 
 % Abbildungsverzeichnis anpassen
-\renewcommand{\cftfigpresnum}{Abbildung }
+\renewcommand{\cftfigpresnum}{Figure }
 \renewcommand{\cftfigaftersnum}{:}
 
 % Breite des Nummerierungsbereiches [Abbildung 1:]
@@ -192,7 +185,7 @@
 \counterwithout{table}{chapter}
 
 % Tabellenverzeichnis anpassen
-\renewcommand{\cfttabpresnum}{Tabelle }
+\renewcommand{\cfttabpresnum}{Table }
 \renewcommand{\cfttabaftersnum}{:}
 
 % Breite des Nummerierungsbereiches [Abbildung 1:]
@@ -214,54 +207,6 @@
 
 %Additional table package
 \usepackage{tabu}
-
-% ##################################################
-% Appendix
-% ##################################################
-
-%Calc packet für berechnungen
-\usepackage{calc}
-
-%Appendix paket, setzen der flags für das TOC
-\usepackage[toc,title,titletoc]{appendix} 
-
-%Umbenennen der überschrift für die Anhänge 
-\renewcommand{\appendixtocname}{Anhänge}
-
-%Befehl für einen neuen Bericht und die erste seite als bild
-\newcommand{\appendixsection}[2]{
-\section{#1}
-\appendixsingle{#2}
-}
-
-%Befehl für einzelne seite als bild eingefasst, damit überschrift und kopfzeile
-% bestehen bleibt. 
-\newcommand{\appendixsingle}[1]{
-\vspace{-10cm}
-\vfill
-\mbox{}\hspace{-1.5cm}\includegraphics[width=\linewidth+3cm]{#1}\hspace{-1.5cm}\mbox{}
-\vspace{-10cm}
-\vfill
-\mbox{}
-}
-
-%Datenträger Tabelle
-\definecolor{lightgray}{gray}{0.85}
-\definecolor{ultralightgray}{gray}{0.95}
-\definecolor{mygray}{gray}{0.70}
-
-% ##################################################
-% Theoreme
-% ##################################################
-  	
-% Umgebung fuer Beispiele
-\newtheorem{beispiel}{Beispiel}
-
-% Umgebung fuer These
-\newtheorem{these}{These}
-
-% Umgebung fuer Definitionen
-\newtheorem{definition}{Definition}
   	
 % ##################################################
 % Literaturverzeichnis

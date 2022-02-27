@@ -29,7 +29,7 @@
 
 % Abstract
 \include{content/framework/abstract}
-\cleardoubleemptypage
+\let\cleardoublepage\clearpage
 
 \phantomsection
 \addcontentsline{toc}{chapter}{Table of Contents}
@@ -48,18 +48,23 @@
 \cleardoubleemptypage
 
 
-
-
 % Abkürzungsverzeichnis
 \include{content/framework/abbreviations}
+
 
 \mainmatter
 
 % Main Content goes here 
 \include{content/chapters/0_introduction}
 \include{content/chapters/1_basics}
+\let\cleardoublepage\clearpage
 \include{content/chapters/2_aas}
+\let\cleardoublepage\clearpage
 \include{content/chapters/3_matching}
+\let\cleardoublepage\clearpage
+\include{content/chapters/4_summary}
+\let\cleardoublepage\clearpage
+
 
 % Literaturverzeichnis
 \singlespacing
