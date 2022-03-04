@@ -22,7 +22,6 @@
 
 % Titelblatt
 \include{content/framework/title}
-\cleardoubleemptypage
 
 \frontmatter
 \pagenumbering{Roman}
@@ -34,23 +33,24 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{Table of Contents}
 \tableofcontents
-\cleardoubleemptypage
+\let\cleardoublepage\clearpage
 
-
+\newpage
 \phantomsection 
 \addcontentsline{toc}{chapter}{\listfigurename} 
 \listoffigures
-\cleardoubleemptypage
+\let\cleardoublepage\clearpage
 
+\newpage
 \phantomsection
 \addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
-\cleardoubleemptypage
+\let\cleardoublepage\clearpage
 
-
+\newpage
 % Abkürzungsverzeichnis
 \include{content/framework/abbreviations}
-
+\let\cleardoublepage\clearpage
 
 \mainmatter
 
